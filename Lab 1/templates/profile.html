@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{%block title%}
+Profile
+{%endblock%}
+
+{%block content%}
+<div class="d-flex flex-column justify-content-center align-items-center mt-5 me-5">
+    <h1>Hello, {{ session['username'] }}</h1>
+    <p>This is the Profile page..</p>
+</div>
+
+{%endblock%}

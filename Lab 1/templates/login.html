@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+{%block title%}
+Login Page
+{%endblock%}
+
+{%block content%}
+<div class="d-flex justify-content-center align-items-center mt-5 me-5">
+    <form action="#" method="post" class="px-5 my-3 w-25">
+        <div>
+            <h2>Login</h2>
+        </div>
+        <div class="form-group my-3">
+            <label for="exampleInputEmail1" class="mb-1">Username</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="nm" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group my-3">
+            <label for="exampleInputPassword1" class="mb-1">Password</label>
+            <input type="password" name="ps" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" value='submit' class="btn btn-dark my-2">Login</button>
+    </form>
+</div>
+{%endblock%}

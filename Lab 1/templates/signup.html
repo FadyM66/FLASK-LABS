@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+
+{%block title%}
+Signup Page
+{%endblock%}
+
+{%block content%}
+<div class="d-flex justify-content-center align-items-center mt-5 me-5">
+    <form class="px-5 my-3 w-25">
+        <div>
+            <h2>Signup</h2>
+        </div>
+        <div class="form-group my-3">
+            <label for="exampleInputEmail1" class="mb-1">Username</label>
+            <input type="text" name="username" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Enter username">
+        </div>
+        <div class="form-group my-3">
+            <label for="exampleInputPassword1" class="mb-1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                name="password">
+        </div>
+        <div class="form-group my-3">
+            <label for="exampleInputPassword1" class="mb-1">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                name="confirm_password">
+        </div>
+        <button type="submit" class="btn btn-dark my-2">Submit</button>
+    </form>
+</div>
+{%endblock%}
