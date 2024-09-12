@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Admin Dashboard
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Admin Dashboard</h2>
+    <h3>Users</h3>
+    <ul class="list-group mb-4">
+        {% for user in users %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{ user.username }}
+            <a href="{{ url_for('delete_user', user_id=user.id) }}" class="btn btn-danger">Delete User</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <h3>Books</h3>
+    <ul class="list-group">
+        {% for book in books %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <strong>{{ book.title }}</strong> by {{ book.author }}
+            <a href="{{ url_for('delete_book', book_id=book.id) }}" class="btn btn-danger">Delete Book</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
