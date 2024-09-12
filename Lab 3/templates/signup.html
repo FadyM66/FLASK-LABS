@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Registration Page
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center mt-5 me-5">
+    <form class="px-5 my-3 w-25" method="post" enctype="multipart/form-data">
+        <div>
+            <h2>Signup</h2>
+        </div>
+        <div class="form-group my-3">
+            <label for="username" class="mb-1">Username</label>
+            <input type="text" name="username" class="form-control" id="username" required>
+        </div>
+        <div class="form-group my-3">
+            <label for="password" class="mb-1">Password</label>
+            <input type="password" name="password" class="form-control" id="password" required>
+        </div>
+        <div class="form-group my-3">
+            <label for="confirm_password" class="mb-1">Confirm Password</label>
+            <input type="password" name="confirm_password" class="form-control" id="confirm_password" required>
+        </div>
+        <div class="form-group my-3">
+            <label for="image" class="mb-1">Profile Image</label>
+            <input type="file" name="image" class="form-control" id="image">
+        </div>
+        <button type="submit" class="btn btn-dark my-2">Submit</button>
+    </form>
+</div>
+{% endblock %}
