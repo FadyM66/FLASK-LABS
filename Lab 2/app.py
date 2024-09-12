@@ -44,19 +44,6 @@ class User(db.Model):
         }
 
     
-# class Book(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     name = db.Column(db.String, nullable=True)
-#     price = db.Column(db.Integer, nullable=True, default='Not available')
-#     createdat = db.Column(db.DateTime, default=datetime.utcnow)
-#     modifiedat = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-    
-#     def __str__(self):
-#         return self.name
-    
-#     def __repr__(self):
-#         return f"Book('{self.name}', '{self.price}')"
-
 class Book(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String, nullable=False)
